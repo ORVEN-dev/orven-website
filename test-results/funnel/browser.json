@@ -3,6 +3,140 @@
     {
       "lang": "en",
       "route": "",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "services/",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "contact/",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "services/",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "contact/",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "",
       "width": 390,
       "scrollWidth": 390,
       "notes": [

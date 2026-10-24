@@ -2,6 +2,20 @@
 
 Implemented 24 October 2026 against main `470a806eac4e386df5402857d0f57c589925d23a`.
 
+## Approved offer wording update
+
+Continues the existing Pricing and sales-funnel work in PR #1 on `codex/delivery-guarantee-funnel`, based on `114ee611b1efa83812c3fcdc6fc2dd97def24ded`. Both prior chats were idle and the remote branch matched that commit when work began. No duplicate PR or pricing section was created.
+
+Every English delivery notice now places **ORVEN 100% Delivery Guarantee** immediately above **Your Website. As Agreed. On Time. Or Your Money Back.** The offer portion is exactly `Your Website. As Agreed. On Time.` and the assurance portion is exactly `Or Your Money Back.` The latter uses the existing bronze color, with readable contrast on dark and light sections. Both portions form one paragraph with the approved punctuation and spacing. The shared generator also supplies the same wording below the guarantee name in the full terms. Arabic has a localized equivalent with the existing RTL typography.
+
+Placement follows the existing decision points: three notices on Home (hero, Pricing and final CTA), four on Services (hero, website service, web-app service and final CTA), one beside the Contact form, and the existing closing CTAs on About, Work and both case studies. No sticky notice or extra section was introduced. Each notice retains the contractual qualification and localized terms link; the refund is for paid development fees under the stated breach/cure conditions, not an unconditional refund of external costs or a guarantee of commercial results.
+
+The attached original PDF was recovered from the referenced conversation, confirmed to have 16 pages, and pages 8–14 were checked against the earlier extraction and rendered pages. The existing implementation of customer-focused hero copy, benefits, authentic feedback, FAQ and local conversion hooks is retained. Trust-campaign creative should use the exact approved offer and corresponding qualification, matching localized Home and its terms route.
+
+Latest validation: production build; 864 static checks; asset budgets; 43 Worker/retention tests; 32 existing browser page views; 36 funnel views across 320/390/768/908/1024/1440 widths in both languages. Exact offer text, name order, notice count, absence of fixed positioning, clipping, CTA adjacency, terms opening/reopening, keyboard and no-JavaScript access were checked. Three inquiry outcomes were mocked locally; no production inquiry was sent. Pricing, optional Hosting, original reviews, project records, source section order, assets, design tokens and deployment configuration compare unchanged against the prior PR. Previous Lighthouse numbers below belong to the earlier revision and were not rerun for this wording update.
+
+**Release status:** this update is prepared for review in the same draft PR, not merged or deployed. A direct live English GET returned HTTP 200 but did not contain the guarantee name or approved offer when checked. GitHub updates do not establish Cloudflare deployment. Obtain legal review of the bilingual guarantee and project contract **before advertising or publishing the guarantee**, including the contractual cure period and refund process; no new dates, notice periods or refund deadlines have been invented.
+
 ## Result
 
 The Home and Services opening copy now addresses customer uncertainty and explains the value of clear websites and practical web apps. The primary action remains Start a Project, with the existing real work as supporting evidence. The existing multipage navigation, section order, dark/bronze identity, local fonts, portfolio, authentic Arabic feedback and labelled translations are retained.

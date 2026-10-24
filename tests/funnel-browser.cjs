@@ -8,8 +8,9 @@ const path=require('node:path');
  const out=path.resolve(__dirname,'../test-results/funnel');await fs.mkdir(out,{recursive:true});
  const browser=await chromium.launch({channel:'chrome',headless:true,args:['--no-proxy-server']});
  const results=[],errors=[];
+ const offer={en:'Your Website. As Agreed. On Time. Or Your Money Back.',ar:'موقعك. بالمواصفات المتفق عليها. في الموعد. أو تستردّ أموالك.'};
  try{
-  for(const width of [390,768,908,1024,1440]){
+  for(const width of [320,390,768,908,1024,1440]){
    const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'});
    const page=await context.newPage();page.on('pageerror',e=>errors.push(String(e)));
    for(const lang of ['en','ar'])for(const route of ['','services/','contact/']){
@@ -19,11 +20,19 @@ const path=require('node:path');
      clipped:[...document.querySelectorAll('.delivery-note p,.delivery-terms p,.hero h1')].filter(n=>n.scrollWidth>n.clientWidth+1).length}));
     assert.ok(metrics.scrollWidth<=width);assert.equal(metrics.clipped,0);
     assert.ok(metrics.notes.length);assert.ok(metrics.notes.every(n=>n.scrollWidth<=n.width&&n.actionBefore));
+    for(const note of await page.locator('.delivery-note').all()){
+     assert.equal(await note.locator('.delivery-offer').textContent(),offer[lang]);
+     assert.equal(await note.locator('.delivery-offer').evaluate(n=>n.previousElementSibling.className),'delivery-name');
+     if(lang==='en')assert.equal(await note.locator('.delivery-name').textContent(),'ORVEN 100% Delivery Guarantee');
+     assert.ok(await note.evaluate(n=>getComputedStyle(n).position==='static'));
+    }
+    assert.equal(metrics.notes.length,route===''?3:route==='services/'?4:1);
     if(route==='services/'){
      assert.equal(await page.locator('#delivery-guarantee').evaluate(e=>e.open),false);
      await page.locator('.hero .delivery-note a').click();
      assert.equal(await page.locator('#delivery-guarantee').evaluate(e=>e.open),true);
      assert.ok(await page.locator('#delivery-guarantee').isVisible());
+     assert.equal(await page.locator('#delivery-guarantee .delivery-offer').textContent(),offer[lang]);
      await page.locator('#delivery-guarantee summary').focus();await page.keyboard.press('Enter');
      assert.equal(await page.locator('#delivery-guarantee').evaluate(e=>e.open),false);
      // A repeated link to the same fragment must reopen manually collapsed terms.

@@ -38,14 +38,18 @@ def link(text,url,cls='',external=False,attrs=''):
  if action:attrs+=f' data-conversion="{action}"'
  return f'<a class="{cls}" href="{e(url)}"'+(' target="_blank" rel="noopener noreferrer"' if external else '')+f' {attrs}>{text}<span class="arrow" aria-hidden="true">↗</span></a>'
 
+def guarantee_offer(l):
+ g=C['guarantee']
+ return '<p class="delivery-offer">'+e(t(g['offer'],l))+' <span>'+e(t(g['promise'],l))+'</span></p>'
+
 def guarantee(l):
  g=C['guarantee']
- return '<aside class="delivery-note"><p class="delivery-name">'+e(t(g['name'],l))+'</p><p class="muted">'+e(t(g['summary'],l))+'</p>'+link(e(t(g['link'],l)),path('services',l)+'#delivery-guarantee','text-link')+'</aside>'
+ return '<aside class="delivery-note"><p class="delivery-name">'+e(t(g['name'],l))+'</p>'+guarantee_offer(l)+'<p class="muted">'+e(t(g['summary'],l))+'</p>'+link(e(t(g['link'],l)),path('services',l)+'#delivery-guarantee','text-link')+'</aside>'
 
 def guarantee_terms(l):
  g=C['guarantee']
  # Open in the HTML so the complete terms are accessible without JavaScript.
- return '<details class="delivery-terms" id="delivery-guarantee" open><summary>'+e(t(g['link'],l))+'<span aria-hidden="true">+</span></summary><div><h3>'+e(t(g['name'],l))+'</h3>'+''.join('<p class="muted">'+e(t(x,l))+'</p>' for x in g['terms'])+'</div></details>'
+ return '<details class="delivery-terms" id="delivery-guarantee" open><summary>'+e(t(g['link'],l))+'<span aria-hidden="true">+</span></summary><div><h3>'+e(t(g['name'],l))+'</h3>'+guarantee_offer(l)+''.join('<p class="muted">'+e(t(x,l))+'</p>' for x in g['terms'])+'</div></details>'
 def channel(k,l,cls='btn secondary'):
  txt=L(k,l)
  if k=='email': return link(txt,'mailto:'+K['email'],cls)

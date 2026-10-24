@@ -1291,6 +1291,14 @@
       "en": "ORVEN 100% Delivery Guarantee",
       "ar": "ضمان ORVEN للتسليم بنسبة 100%"
     },
+    "offer": {
+      "en": "Your Website. As Agreed. On Time.",
+      "ar": "موقعك. بالمواصفات المتفق عليها. في الموعد."
+    },
+    "promise": {
+      "en": "Or Your Money Back.",
+      "ar": "أو تستردّ أموالك."
+    },
     "summary": {
       "en": "If an ORVEN-caused failure to meet agreed specifications or the contractual deadline remains unresolved after the contractual cure period, we refund 100% of development fees paid. Terms apply.",
       "ar": "إذا أخفقت ORVEN لأسباب راجعة إليها في الالتزام بالمواصفات المتفق عليها أو الموعد التعاقدي، ولم تعالج الإخلال خلال مهلة الإصلاح التعاقدية، نردّ 100% من رسوم التطوير المدفوعة. تُطبّق الشروط."
