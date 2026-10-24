@@ -37,10 +37,9 @@ python source/build.py --production
 python tests/check_site.py
 python tests/check_budgets.py
 node --test tests/worker.test.mjs tests/retention.test.mjs
-npx wrangler@4.151.2 deploy --config wrangler.jsonc
 ```
 
-Wrangler requires the owner's normal Cloudflare authentication. Secrets already exist in the deployed Worker; never put them in `vars`, browser settings, JSON content, a public repository, or this ZIP. Preserve `GAS_SHARED_SECRET`, `GAS_WEB_APP_URL`, and `TURNSTILE_SECRET_KEY`. Google's matching `SHARED_SECRET` lives in Script properties. Do not rerun setup or create another Form for routine edits. Existing Google Form editor and responder access must remain Restricted to the owner; direct public responder access was explicitly removed and live intake retested successfully.
+After validation, commit the edited source and regenerated `dist/` to `main`. The existing Cloudflare Workers Builds connection for `ORVEN-dev/orven-website` automatically builds and deploys Worker `orven` from `main`. Follow the `Workers Builds: orven` GitHub check to its Cloudflare build record, wait for success, then verify the active version and live site. Routine releases use this Git-connected path; do not publish directly from a local Wrangler command. Wrangler may still run internally as the Cloudflare deploy command; the dashboard associates that release with Build/main. Secrets already exist in the deployed Worker; never put them in `vars`, browser settings, JSON content, a public repository, or this ZIP. Preserve `GAS_SHARED_SECRET`, `GAS_WEB_APP_URL`, and `TURNSTILE_SECRET_KEY`. Google's matching `SHARED_SECRET` lives in Script properties. Do not rerun setup or create another Form for routine edits. Existing Google Form editor and responder access must remain Restricted to the owner; direct public responder access was explicitly removed and live intake retested successfully.
 
 ## Motion and the home marquee
 
@@ -60,6 +59,11 @@ Do not run `liveSelfTest` casually: it creates and permanently deletes a synthet
 
 ## Deployment record
 
+25 October 2026: PR #1 merged into `main` as `a9ecd8224ca071a61ce9ca547508ddbe1722665e`, preserving all four feature commits and the pricing changes. Cloudflare automatically ran Git-connected Build `3b75f560-4cd4-4a78-8b52-42ed7d336e20` successfully, producing version `b25a6301-1d69-4e51-8d0b-7716b45a9604` at 100% traffic. The fully merged feature branch was removed; `main` is the only branch and PR #1 is merged/closed. This supersedes earlier draft/unmerged release-status statements in the historical funnel handoff. Earlier manual deployments remain historical records.
+
+Before merge, all 16 localized pages and public assets matched the deployed feature source; the root route is intentionally handled by the language redirect. Rebuilding production reproduced the tracked pages. Validation passed 864 static checks, asset budgets, 43 Worker/retention tests, 36 responsive funnel views and 32 full-site browser views, with inquiry outcomes mocked locally.
+
 25 October 2026: source `5db503a179045bcc317aaf5bd0a1c53384d7c30e` published directly to Worker `orven`, version `2164c6ff-5bc3-4438-81f1-7353a87ae327`. All 16 live localized pages and CSS/JS matched the published source; 32 live responsive browser views passed. See `SALES-FUNNEL-HANDOFF.md`. PR #1 remains separate from this direct deployment.
 
 Worker `orven`, version `287cd801-20d4-414b-be9f-a2120b0fff52`, deployed 19 October 2026. Google web app version 1, description “ORVEN launch — verified save and 30-day retention.” Administrative deployment identifiers are in the private handoff report. No paid subscription was activated.
+
