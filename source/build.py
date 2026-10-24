@@ -180,7 +180,7 @@ def footer(l):
  out='<footer><div class="wrap footer-main"><div><a href="'+path('home',l)+'"><img class="footer-logo" src="/assets/orven-logo-360.webp" alt="ORVEN" width="180" height="90" loading="lazy"></a><p class="muted">'+L('footer',l)+'</p></div><nav aria-label="'+t({'en':'Footer navigation','ar':'التنقل في تذييل الصفحة'},l)+'">'+''.join(f'<a href="{path(x,l)}">{L(x,l)}</a>' for x in ['work','services','about','contact'])+'</nav><div class="footer-contact">'+channel('email',l,'text-link')+channel('whatsapp',l,'text-link channel-link')
  if K['instagram']:out+=link('Instagram',K['instagram'],'text-link',True)
  out+='</div></div><div class="wrap founder-links">'
- for key,n in [('hamed','Mohamed Hamed' if l=='en' else 'محمد حامد'),('hadidy','Mohamed El-Hadidy' if l=='en' else 'محمد الحديدي'),('ziad','Ziad Mohamed' if l=='en' else 'زياد محمد')]:
+ for key,n in [('hadidy','Mohamed El-Hadidy' if l=='en' else 'محمد الحديدي'),('hamed','Mohamed Hamed' if l=='en' else 'محمد حامد'),('ziad','Ziad Mohamed' if l=='en' else 'زياد محمد')]:
   if K['linkedin'].get(key):out+=link(n+' · LinkedIn',K['linkedin'][key],'text-link',True)
  return out+f'</div><div class="wrap footer-bottom"><p>© 2026 ORVEN. {L("rights",l)}</p><a href="{path("privacy",l)}">{L("privacy",l)}</a></div></footer>'
 def metadata(k,l,body):

@@ -997,21 +997,6 @@
         "items": [
           {
             "title": {
-              "en": "Mohamed Hamed",
-              "ar": "محمد حامد"
-            },
-            "body": {
-              "en": "Focused on designing intuitive interfaces, building frontend experiences, and understanding what clients need from their digital presence.",
-              "ar": "يركّز على تصميم واجهات سهلة الاستخدام، وتطوير الواجهات الأمامية، وفهم ما يحتاجه العملاء من حضورهم الرقمي."
-            },
-            "role": {
-              "en": "Co-Founder · Frontend & UI/UX",
-              "ar": "شريك مؤسس · الواجهات الأمامية وتصميم تجربة المستخدم"
-            },
-            "social": "hamed"
-          },
-          {
-            "title": {
               "en": "Mohamed El-Hadidy",
               "ar": "محمد الحديدي"
             },
@@ -1024,6 +1009,21 @@
               "ar": "شريك مؤسس · تطوير الأنظمة الخلفية"
             },
             "social": "hadidy"
+          },
+          {
+            "title": {
+              "en": "Mohamed Hamed",
+              "ar": "محمد حامد"
+            },
+            "body": {
+              "en": "Focused on designing intuitive interfaces, building frontend experiences, and understanding what clients need from their digital presence.",
+              "ar": "يركّز على تصميم واجهات سهلة الاستخدام، وتطوير الواجهات الأمامية، وفهم ما يحتاجه العملاء من حضورهم الرقمي."
+            },
+            "role": {
+              "en": "Co-Founder · Frontend & UI/UX",
+              "ar": "شريك مؤسس · الواجهات الأمامية وتصميم تجربة المستخدم"
+            },
+            "social": "hamed"
           },
           {
             "title": {
