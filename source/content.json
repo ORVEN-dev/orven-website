@@ -1303,6 +1303,10 @@
       "en": "If an ORVEN-caused failure to meet agreed specifications or the contractual deadline remains unresolved after the contractual cure period, we refund 100% of development fees paid. Terms apply.",
       "ar": "إذا أخفقت ORVEN لأسباب راجعة إليها في الالتزام بالمواصفات المتفق عليها أو الموعد التعاقدي، ولم تعالج الإخلال خلال مهلة الإصلاح التعاقدية، نردّ 100% من رسوم التطوير المدفوعة. تُطبّق الشروط."
     },
+    "heroSummary": {
+      "en": "If we fail to deliver as agreed and don't resolve it within the contractual cure period, we refund 100% of your development fees. Terms apply.",
+      "ar": "إذا لم نسلّم وفق المتفق عليه ولم نعالج الإخلال خلال مهلة الإصلاح التعاقدية، نردّ 100% من رسوم التطوير التي دفعتها. تُطبّق الشروط."
+    },
     "link": {
       "en": "Delivery guarantee terms",
       "ar": "شروط ضمان التسليم"

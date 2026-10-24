@@ -285,3 +285,14 @@ html[lang=ar] .delivery-offer{letter-spacing:0;line-height:1.6}
 .delivery-terms h3{font-size:23px;margin:16px 0}
 .delivery-terms p+p{margin-top:16px}
 @media(max-width:760px){.delivery-note{padding-inline-start:14px}.delivery-offer,.hero .delivery-offer{font-size:22px}.delivery-terms{scroll-margin-top:100px}.delivery-terms summary{font-size:17px}.delivery-terms h3{font-size:21px}}
+/* Approved home hero guarantee: an open text stack on the existing hero. */
+.delivery-note--hero{max-width:700px;margin-top:32px;padding-inline-start:20px;border-inline-start-width:2px;text-align:start}
+.delivery-note--hero .delivery-name{margin-bottom:6px}
+.hero .delivery-note--hero .delivery-offer{max-width:none;font-size:32px;line-height:1.25;margin-bottom:14px}
+.delivery-note--hero .delivery-offer span{display:block}
+.delivery-note--hero p.muted{max-width:640px;font-size:14px;line-height:1.75}
+.delivery-note--hero .text-link{margin-top:12px;border-bottom-color:#ffffff50}
+.delivery-note--hero .text-link:hover{border-bottom-color:var(--bronze)}
+.delivery-note--hero .text-link .arrow{font-size:16px}
+html[lang=ar] .delivery-note--hero .delivery-offer{line-height:1.6}
+@media(max-width:760px){.delivery-note--hero{padding-inline-start:16px}.hero .delivery-note--hero .delivery-offer{font-size:24px}}

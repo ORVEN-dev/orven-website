@@ -42,9 +42,10 @@ def guarantee_offer(l):
  g=C['guarantee']
  return '<p class="delivery-offer">'+e(t(g['offer'],l))+' <span>'+e(t(g['promise'],l))+'</span></p>'
 
-def guarantee(l):
+def guarantee(l,hero=False):
  g=C['guarantee']
- return '<aside class="delivery-note"><p class="delivery-name">'+e(t(g['name'],l))+'</p>'+guarantee_offer(l)+'<p class="muted">'+e(t(g['summary'],l))+'</p>'+link(e(t(g['link'],l)),path('services',l)+'#delivery-guarantee','text-link')+'</aside>'
+ cls='delivery-note delivery-note--hero' if hero else 'delivery-note'
+ return '<aside class="'+cls+'"><p class="delivery-name">'+e(t(g['name'],l))+'</p>'+guarantee_offer(l)+'<p class="muted">'+e(t(g['heroSummary' if hero else 'summary'],l))+'</p>'+link(e(t(g['link'],l)),path('services',l)+'#delivery-guarantee','text-link')+'</aside>'
 
 def guarantee_terms(l):
  g=C['guarantee']
@@ -118,7 +119,7 @@ def render_section(s,l,i,page):
  out+=intro(s,l,i,kind=='hero')
  if kind=='hero':
   out+=actions(s.get('actions',[]),l)
-  if 'start' in s.get('actions',[]):out+=guarantee(l)
+  if 'start' in s.get('actions',[]):out+=guarantee(l,hero=page=='home')
   if page=='home': out+='<div class="hero-foot"><span>'+t({'en':'Websites · Web applications','ar':'مواقع إلكترونية · تطبيقات ويب'},l)+'</span><span>'+t({'en':'Built with intention.','ar':'نبني بهدف واضح.'},l)+'</span></div>'
  elif kind=='projects': out+=projects(l,page=='home')
  elif kind=='reviews': out+=reviews(l)
