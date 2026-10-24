@@ -13,7 +13,7 @@ class Document(HTMLParser):
  def all(self,tag):return [a for t,a in self.tags if t==tag]
 files=list(D.glob('en/**/index.html'))+list(D.glob('ar/**/index.html'))
 check(len(files)==16,'Expected 16 localized pages')
-expect={'home':9,'services':6,'work':3,'about':4,'contact':4,'spiky':7,'future-interiors':7}
+expect={'home':10,'services':6,'work':3,'about':4,'contact':4,'spiky':7,'future-interiors':7}
 for file in files:
  text=file.read_text(encoding='utf-8');doc=Document(text);lang=file.relative_to(D).parts[0]
  check(doc.all('html')[0].get('lang')==lang,f'{file}: lang')

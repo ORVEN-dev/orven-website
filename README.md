@@ -10,7 +10,7 @@ Performance maintenance: `tools/responsive_images.py` (Pillow) regenerates uncro
 
 Optional browser regression checks: install Playwright and run `node tests/performance-browser.cjs` against the preview server on port 8773, or set `TEST_ORIGIN`. It checks both languages and widths, original-image zoom, navigation and empty-form validation; it does not send an inquiry.
 
-- `source/content.json`: navigation, all 26 core sections, buttons, FAQs, form messages, and English/Arabic metadata copy.
+- `source/content.json`: navigation, all 27 core sections (including home pricing), buttons, FAQs, form messages, and English/Arabic metadata copy.
 - `source/cases.json`: the two seven-section case studies.
 - `source/privacy.json`: bilingual privacy policy.
 - `source/site-config.json`: public contact details, public Turnstile key, site URL, provider configuration. `privacy_reviewed` means the configured text has received an implementation/editorial review; it is not legal certification.

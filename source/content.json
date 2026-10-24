@@ -411,6 +411,52 @@
         ]
       },
       {
+        "kind": "pricing",
+        "id": "pricing",
+        "label": {
+          "en": "PRICING",
+          "ar": "الأسعار"
+        },
+        "title": {
+          "en": "A starting point for your project.",
+          "ar": "نقطة بداية لمشروعك."
+        },
+        "body": {
+          "en": "Starting prices for websites and web applications. The final cost depends on your project's requirements.",
+          "ar": "أسعار بداية للمواقع وتطبيقات الويب. تعتمد التكلفة النهائية على متطلبات مشروعك."
+        },
+        "startingFrom": {
+          "en": "Starting from",
+          "ar": "يبدأ من"
+        },
+        "currency": {
+          "en": "EGP",
+          "ar": "جنيه مصري"
+        },
+        "items": [
+          {
+            "title": {"en": "Landing Page", "ar": "صفحة هبوط"},
+            "price": 8000
+          },
+          {
+            "title": {"en": "Multi-Page Website", "ar": "موقع متعدد الصفحات"},
+            "price": 16000
+          },
+          {
+            "title": {"en": "Custom Web App", "ar": "تطبيق ويب مخصّص"},
+            "price": 35000
+          }
+        ],
+        "note": {
+          "en": "After a discovery meeting and technical scope review, we'll send you a final quote tailored to your project. It may not be available during the meeting.",
+          "ar": "نرسل لك عرض السعر النهائي المخصّص لمشروعك بعد اجتماع لفهم احتياجاتك ومراجعة نطاق العمل والمتطلبات التقنية؛ وقد لا يكون السعر النهائي متاحًا أثناء الاجتماع."
+        },
+        "cta": {
+          "en": "Discuss Your Project",
+          "ar": "لنتحدث عن مشروعك"
+        }
+      },
+      {
         "kind": "projects",
         "title": {
           "en": "A closer look at our work.",
@@ -758,8 +804,8 @@
               "ar": "الاستضافة"
             },
             "body": {
-              "en": "Hosting is included in the project price for the agreed coverage period, with the details outlined before launch.",
-              "ar": "يشمل سعر المشروع الاستضافة للفترة المتفق عليها، مع توضيح تفاصيل التغطية قبل الإطلاق."
+              "en": "Hosting is optional and priced based on your project's actual needs. If requested, its cost is included in the final project quote. If not requested, no hosting fee is charged.",
+              "ar": "الاستضافة اختيارية، وتُحدَّد تكلفتها حسب احتياجات مشروعك الفعلية. إذا طلبتها، تُدرج تكلفتها ضمن عرض السعر النهائي للمشروع، ولا تُحتسب أي رسوم استضافة إذا لم تطلبها."
             }
           },
           {

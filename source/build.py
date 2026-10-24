@@ -107,6 +107,11 @@ def render_section(s,l,i,page):
  elif kind=='projects': out+=projects(l,page=='home')
  elif kind=='reviews': out+=reviews(l)
  elif kind=='form': out+=form(l)
+ elif kind=='pricing':
+  out+='<div class="grid pricing-grid" style="--columns:3">'
+  for j,a in enumerate(s['items']):
+   out+=f'<article><span class="item-number">{j+1:02d}</span><h3>{e(t(a["title"],l))}</h3><div class="price"><p class="price-label muted">{e(t(s["startingFrom"],l))}</p><p class="price-value"><bdi dir="ltr">{a["price"]:,}</bdi> <span class="price-currency">{e(t(s["currency"],l))}</span></p></div></article>'
+  out+='</div><p class="pricing-note muted">'+e(t(s['note'],l))+'</p>'+link(e(t(s['cta'],l)),path('contact',l),'text-link section-link')
  elif kind=='faq':
   out+='<div class="faq-list">'+''.join(f'<details><summary>{e(t(a["title"],l))}<span aria-hidden="true">+</span></summary><p>{e(t(a["body"],l))}</p></details>' for a in s['items'])+'</div>'
  elif kind=='detail':
@@ -214,5 +219,5 @@ for k in C['titles']:
 (D/'sitemap.xml').write_text(sitemap+'</urlset>',encoding='utf-8')
 (D/'robots.txt').write_text('User-agent: *\n'+('Allow: /\nSitemap: '+ORIGIN+'/sitemap.xml\n' if PROD else 'Disallow: /\n'),encoding='utf-8')
 (D/'_headers').write_text("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Content-Security-Policy: default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'\n  Strict-Transport-Security: max-age=31536000\n\n/assets/*\n  Cache-Control: public, max-age=86400\n",encoding='utf-8')
-(R/'build-info.json').write_text(json.dumps({'mode':'production' if PROD else 'preview','origin':ORIGIN,'pages':16,'core_sections':26,'case_sections':14,'form_active':bool(K['form_endpoint']),'whatsapp_active':bool(K['whatsapp'])},indent=2),encoding='utf-8')
-print('Built 16 bilingual pages, 26 core sections and 14 case-study sections. Mode:', 'production' if PROD else 'preview')
+(R/'build-info.json').write_text(json.dumps({'mode':'production' if PROD else 'preview','origin':ORIGIN,'pages':16,'core_sections':27,'case_sections':14,'form_active':bool(K['form_endpoint']),'whatsapp_active':bool(K['whatsapp'])},indent=2),encoding='utf-8')
+print('Built 16 bilingual pages, 27 core sections and 14 case-study sections. Mode:', 'production' if PROD else 'preview')
