@@ -2,6 +2,12 @@
 
 Implemented 24 October 2026 against main `470a806eac4e386df5402857d0f57c589925d23a`.
 
+## Current copy revision — 25 October 2026
+
+At the owner's request, the existing English and Arabic headlines and subheadlines have been restored verbatim from `470a806`. This includes the original Home and Services hero titles/intros, Home approach intro and benefit-card headings, and Contact intro/closing headline and subheadline. Home again reads `Digital experiences. Built around your business.` and Services reads `Different businesses. Different needs.` with their original authored line breaks. Only eleven bilingual heading/intro fields changed from the approved-offer revision.
+
+The exact approved offer, guarantee name, qualifications, full terms, placements, links, styling, Pricing, optional Hosting, FAQ, descriptive card/process copy and conversion hooks remain unchanged. The earlier implementation notes below describe the history; their references to rewritten hero/intro copy are superseded by this restoration. Campaign messaging should match the restored agency headline plus the exact approved offer and guarantee. This revision passed the production build, 864 static checks, asset budgets and the 36-view bilingual responsive funnel regression, including the exact offer text and terms interactions. It remains in the same draft PR and has not been deployed.
+
 ## Approved offer wording update
 
 Continues the existing Pricing and sales-funnel work in PR #1 on `codex/delivery-guarantee-funnel`, based on `114ee611b1efa83812c3fcdc6fc2dd97def24ded`. Both prior chats were idle and the remote branch matched that commit when work began. No duplicate PR or pricing section was created.

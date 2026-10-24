@@ -332,12 +332,12 @@
       {
         "kind": "hero",
         "title": {
-          "en": "Make your business clear.\nGive customers confidence.",
-          "ar": "عرّف بنشاطك بوضوح.\nوامنح عميلك الثقة."
+          "en": "Digital experiences.\nBuilt around your business.",
+          "ar": "تجارب رقمية.\nمصمّمة حول احتياجات أعمالك."
         },
         "body": {
-          "en": "When customers can't see what you offer or how to reach you, trust is harder to build. We create websites and web apps that explain your value and make the next step clear, with delivery protected by agreed terms.",
-          "ar": "عندما لا يجد العميل شرحًا واضحًا لخدماتك أو طريقة سهلة للتواصل، يصعب بناء ثقته. نصمّم ونطوّر مواقع وتطبيقات ويب توضّح قيمة نشاطك وتسهّل الخطوة التالية، مع ضمان تسليم بشروط متفق عليها."
+          "en": "We design and develop websites and web applications that make sense for your business, your customers, and the way you work.",
+          "ar": "نصمّم ونطوّر مواقع وتطبيقات ويب تناسب طبيعة نشاطك وعملاءك وطريقة عملك."
         },
         "label": {
           "en": "WEB DESIGN & DEVELOPMENT",
@@ -355,8 +355,8 @@
           "ar": "الحل المناسب يبدأ بفهم المشكلة."
         },
         "body": {
-          "en": "We start by understanding what your customers need to know and what slows your team down. Then we agree on what to build, how it will be delivered, and the next steps, so you can make an informed decision before work starts.",
-          "ar": "نبدأ بفهم ما يحتاج عميلك إلى معرفته وما يعطّل عمل فريقك. ثم نتفق على ما سنبنيه وطريقة تسليمه والخطوات التالية، لتتخذ قرارك على أساس واضح قبل بدء التنفيذ."
+          "en": "Before we design or develop anything, we take the time to understand your business, the challenges you're facing, and what you actually need. That way, every decision has a reason behind it.",
+          "ar": "قبل أن نصمّم أو نطوّر أي شيء، نأخذ الوقت لفهم نشاطك والتحديات التي تواجهها وما تحتاجه فعلًا. ليكون لكل قرار في المشروع سبب واضح."
         },
         "label": {
           "en": "OUR APPROACH",
@@ -498,8 +498,8 @@
         "items": [
           {
             "title": {
-              "en": "A scope you can rely on.",
-              "ar": "نطاق عمل واضح من البداية."
+              "en": "We look at the bigger picture.",
+              "ar": "ننظر إلى الصورة الكاملة."
             },
             "body": {
               "en": "Know what is included, what it costs, and when it is due. We document the scope, delivery deadline and review stages before development begins.",
@@ -508,8 +508,8 @@
           },
           {
             "title": {
-              "en": "Help customers take the next step.",
-              "ar": "سهّل الخطوة التالية لعميلك."
+              "en": "Design with a reason.",
+              "ar": "تصميم له هدف."
             },
             "body": {
               "en": "Clear services, useful information and accessible contact options help visitors understand your business and decide whether to get in touch.",
@@ -518,8 +518,8 @@
           },
           {
             "title": {
-              "en": "Less friction in everyday work.",
-              "ar": "عمل يومي أكثر سهولة."
+              "en": "Built to work, not just look good.",
+              "ar": "جودة تظهر في الاستخدام."
             },
             "body": {
               "en": "Bring the tools your team and customers need into a practical web app, with the agreed functions tested across screen sizes before delivery.",
@@ -710,12 +710,12 @@
       {
         "kind": "hero",
         "title": {
-          "en": "Clear to your customers.\nUseful to your team.",
-          "ar": "واضح لعملائك.\nعملي لفريقك."
+          "en": "Different businesses.\nDifferent needs.",
+          "ar": "لكل نشاط طبيعته.\nولكل مشروع احتياجاته."
         },
         "body": {
-          "en": "Help customers understand your services, or replace disconnected tools with a system that fits your work. We build websites and web apps around those needs, with a written scope, contractual deadline and conditional delivery guarantee.",
-          "ar": "ساعد عملاءك على فهم خدماتك، أو اجمع الأدوات المتفرّقة في نظام يناسب عملك. نبني مواقع وتطبيقات ويب لهذه الاحتياجات، بنطاق مكتوب وموعد تعاقدي وضمان تسليم مشروط."
+          "en": "Whether you need a new website, a better version of your current one, or a custom web application, we help you find and build the solution that fits your business.",
+          "ar": "سواء كنت تحتاج إلى موقع جديد، أو تطوير موقعك الحالي، أو تطبيق ويب مخصّص، نساعدك على اختيار الحل المناسب لنشاطك وتنفيذه."
         },
         "label": {
           "en": "OUR SERVICES",
@@ -1133,8 +1133,8 @@
           "ar": "لنبدأ بمحادثة."
         },
         "body": {
-          "en": "Tell us what your business needs. We discuss the requirements, review the scope internally, then send a detailed final quote before you decide to proceed.",
-          "ar": "حدّثنا عمّا يحتاجه نشاطك. نناقش المتطلبات ونراجع نطاق العمل داخليًا، ثم نرسل عرض سعر نهائيًا مفصّلًا قبل أن تقرّر البدء."
+          "en": "Have a project in mind, a problem you're trying to solve, or just a question? Tell us a little about it. We'll help you figure out the next step.",
+          "ar": "هل لديك فكرة مشروع، أو مشكلة تحاول حلّها، أو سؤال؟ حدّثنا عنها، وسنساعدك على تحديد الخطوة التالية."
         },
         "label": {
           "en": "GET IN TOUCH",
@@ -1210,12 +1210,12 @@
       {
         "kind": "closing",
         "title": {
-          "en": "Know the scope. Then decide.",
-          "ar": "اعرف التفاصيل، ثم قرّر."
+          "en": "Start small. We'll take it from there.",
+          "ar": "ابدأ بمحادثة بسيطة، ولنحدّد الخطوة التالية معًا."
         },
         "body": {
-          "en": "After the discovery meeting, we review the requirements and send your detailed final quote. The meeting does not commit you to a project, and the final price is not given instantly during the call.",
-          "ar": "بعد اجتماع فهم الاحتياجات، نراجع المتطلبات ونرسل عرض السعر النهائي المفصّل. الاجتماع لا يُلزمك ببدء مشروع، والسعر النهائي لا يُحدَّد فوريًا أثناء المكالمة."
+          "en": "You just need somewhere to start. Tell us what you have in mind, even if it's still an early idea. We'll figure out the next step together.",
+          "ar": "كل ما تحتاج إليه هو نقطة بداية. شاركنا ما تفكّر فيه، حتى لو كانت الفكرة في بدايتها، ولنحدّد الخطوة التالية معًا."
         },
         "label": {
           "en": "ONE LAST THING",

@@ -34,7 +34,7 @@
   "pages": [
     {
       "path": "en/index.html",
-      "full_scroll_uncached_bytes": 1169747,
+      "full_scroll_uncached_bytes": 1169373,
       "passed": true
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "path": "en/contact/index.html",
-      "full_scroll_uncached_bytes": 278960,
+      "full_scroll_uncached_bytes": 278931,
       "passed": true
     },
     {
@@ -54,7 +54,7 @@
     },
     {
       "path": "en/services/index.html",
-      "full_scroll_uncached_bytes": 283914,
+      "full_scroll_uncached_bytes": 283724,
       "passed": true
     },
     {
@@ -74,7 +74,7 @@
     },
     {
       "path": "ar/index.html",
-      "full_scroll_uncached_bytes": 1072325,
+      "full_scroll_uncached_bytes": 1071443,
       "passed": true
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "path": "ar/contact/index.html",
-      "full_scroll_uncached_bytes": 255424,
+      "full_scroll_uncached_bytes": 255227,
       "passed": true
     },
     {
@@ -94,7 +94,7 @@
     },
     {
       "path": "ar/services/index.html",
-      "full_scroll_uncached_bytes": 262363,
+      "full_scroll_uncached_bytes": 262097,
       "passed": true
     },
     {
