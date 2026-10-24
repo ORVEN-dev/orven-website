@@ -1,5 +1,20 @@
 'use strict';
 const settings=JSON.parse(document.getElementById('site-settings').textContent);
+// Local integration hook only: no analytics provider, network request, storage or visitor data.
+function conversion(event,action,section){
+ document.dispatchEvent(new CustomEvent('orven:conversion',{detail:{event,action,section,page:document.body.dataset.page,language:document.documentElement.lang,version:settings.conversionVersion}}));
+}
+document.addEventListener('click',e=>{
+ const a=e.target.closest?.('[data-conversion]');if(!a)return;
+ conversion('cta_click',a.dataset.conversion,a.closest('[data-section]')?.dataset.section||(a.closest('header')?'header':'footer'));
+ if(a.dataset.conversion==='guarantee_terms'&&deliveryTerms)deliveryTerms.open=true;
+});
+const deliveryTerms=document.getElementById('delivery-guarantee');
+if(deliveryTerms){
+ const showTerms=()=>{if(location.hash==='#delivery-guarantee'){deliveryTerms.open=true;deliveryTerms.scrollIntoView({block:'start'});}};
+ deliveryTerms.open=location.hash==='#delivery-guarantee';
+ showTerms();window.addEventListener('hashchange',showTerms);
+}
 const header=document.querySelector('.site-header');
 const menu=document.querySelector('.menu-toggle');
 let previousScroll=window.scrollY;
@@ -53,6 +68,7 @@ if(form){
    const response=await fetch(settings.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:controller.signal,credentials:'omit',referrerPolicy:'no-referrer'});
    const result=await response.json();
    if(!response.ok||result.received!==true||result.requestId!==requestId)throw new Error('Unconfirmed delivery');
+   conversion('inquiry_success','inquiry_form',form.closest('[data-section]').dataset.section);
    status.textContent=copy.success;status.classList.add('ok');form.reset();requestId=crypto.randomUUID();startedAt=Date.now();
   }catch{status.textContent=copy.error}
   finally{clearTimeout(timeout);submit.disabled=false;submit.textContent=copy.submit;turnstileToken='';if(widgetId!==undefined)window.turnstile.reset(widgetId);status.focus()}

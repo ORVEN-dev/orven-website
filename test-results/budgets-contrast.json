@@ -34,82 +34,82 @@
   "pages": [
     {
       "path": "en/index.html",
-      "full_scroll_uncached_bytes": 1161608,
+      "full_scroll_uncached_bytes": 1168642,
       "passed": true
     },
     {
       "path": "en/about/index.html",
-      "full_scroll_uncached_bytes": 273534,
+      "full_scroll_uncached_bytes": 277814,
       "passed": true
     },
     {
       "path": "en/contact/index.html",
-      "full_scroll_uncached_bytes": 273688,
+      "full_scroll_uncached_bytes": 278047,
       "passed": true
     },
     {
       "path": "en/privacy/index.html",
-      "full_scroll_uncached_bytes": 273030,
+      "full_scroll_uncached_bytes": 276770,
       "passed": true
     },
     {
       "path": "en/services/index.html",
-      "full_scroll_uncached_bytes": 274862,
+      "full_scroll_uncached_bytes": 282617,
       "passed": true
     },
     {
       "path": "en/work/index.html",
-      "full_scroll_uncached_bytes": 1016777,
+      "full_scroll_uncached_bytes": 1021057,
       "passed": true
     },
     {
       "path": "en/work/future-interiors/index.html",
-      "full_scroll_uncached_bytes": 905082,
+      "full_scroll_uncached_bytes": 909362,
       "passed": true
     },
     {
       "path": "en/work/spiky/index.html",
-      "full_scroll_uncached_bytes": 1965244,
+      "full_scroll_uncached_bytes": 1969524,
       "passed": true
     },
     {
       "path": "ar/index.html",
-      "full_scroll_uncached_bytes": 1062303,
+      "full_scroll_uncached_bytes": 1071055,
       "passed": true
     },
     {
       "path": "ar/about/index.html",
-      "full_scroll_uncached_bytes": 249691,
+      "full_scroll_uncached_bytes": 254140,
       "passed": true
     },
     {
       "path": "ar/contact/index.html",
-      "full_scroll_uncached_bytes": 249760,
+      "full_scroll_uncached_bytes": 254456,
       "passed": true
     },
     {
       "path": "ar/privacy/index.html",
-      "full_scroll_uncached_bytes": 250629,
+      "full_scroll_uncached_bytes": 254369,
       "passed": true
     },
     {
       "path": "ar/services/index.html",
-      "full_scroll_uncached_bytes": 251594,
+      "full_scroll_uncached_bytes": 260791,
       "passed": true
     },
     {
       "path": "ar/work/index.html",
-      "full_scroll_uncached_bytes": 969619,
+      "full_scroll_uncached_bytes": 974068,
       "passed": true
     },
     {
       "path": "ar/work/future-interiors/index.html",
-      "full_scroll_uncached_bytes": 810760,
+      "full_scroll_uncached_bytes": 815209,
       "passed": true
     },
     {
       "path": "ar/work/spiky/index.html",
-      "full_scroll_uncached_bytes": 1942862,
+      "full_scroll_uncached_bytes": 1947311,
       "passed": true
     }
   ],
@@ -121,12 +121,12 @@
     },
     {
       "file": "site.css",
-      "gzip_bytes": 9649,
+      "gzip_bytes": 9910,
       "passed": true
     },
     {
       "file": "site.js",
-      "gzip_bytes": 5528,
+      "gzip_bytes": 5882,
       "passed": true
     },
     {

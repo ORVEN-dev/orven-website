@@ -4,6 +4,8 @@ Live: https://orven.orven-agency01.workers.dev/ar/ · https://orven.orven-agency
 
 Read `DELIVERY-REPORT-AR.md` for verified results, limitations, ownership, and remaining decisions. This package contains editable source and deployment configuration, not Cloudflare or Google credentials.
 
+For the 24 October delivery-guarantee and trust-funnel update, read `SALES-FUNNEL-HANDOFF.md` for the approved terms, campaign links, local conversion hooks, current verification and release status. New funnel regression: run `node tests/funnel-browser.cjs` with Playwright and a local preview on port 8774 (or set `TEST_ORIGIN`).
+
 ## Edit and preview
 
 Performance maintenance: `tools/responsive_images.py` (Pillow) regenerates uncropped WebP display variants after screenshot changes; the original files remain the lightbox sources. `tools/subset_arabic_fonts.py` (fonttools + brotli) regenerates Arabic webfonts from the retained TTF originals, preserving Arabic shaping, the basic Arabic block, and authored characters. Commit generated assets and their manifest. The standard-library build embeds the authored CSS into each page to avoid blocking CSS requests, and preloads both page-language fonts. Keep editing the original CSS files, not the generated inline styles.

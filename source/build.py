@@ -34,7 +34,18 @@ def e(x): return html.escape(str(x),quote=True)
 def L(k,l): return t(C['labels'][k],l)
 def path(k,l): return '/'+l+'/'+(('work/'+k+'/') if k in CASES else (k+'/' if k!='home' else ''))
 def link(text,url,cls='',external=False,attrs=''):
+ action=('guarantee_terms' if url.endswith('#delivery-guarantee') else 'email' if url.startswith('mailto:') else 'direct_call' if url.startswith('tel:') else 'book_call' if url.startswith('https://wa.me/'+K.get('call_number','')+'?') else 'whatsapp' if url.startswith('https://wa.me/') else 'start_project' if url in [path('contact','en'),path('contact','ar')] else '')
+ if action:attrs+=f' data-conversion="{action}"'
  return f'<a class="{cls}" href="{e(url)}"'+(' target="_blank" rel="noopener noreferrer"' if external else '')+f' {attrs}>{text}<span class="arrow" aria-hidden="true">↗</span></a>'
+
+def guarantee(l):
+ g=C['guarantee']
+ return '<aside class="delivery-note"><p class="delivery-name">'+e(t(g['name'],l))+'</p><p class="muted">'+e(t(g['summary'],l))+'</p>'+link(e(t(g['link'],l)),path('services',l)+'#delivery-guarantee','text-link')+'</aside>'
+
+def guarantee_terms(l):
+ g=C['guarantee']
+ # Open in the HTML so the complete terms are accessible without JavaScript.
+ return '<details class="delivery-terms" id="delivery-guarantee" open><summary>'+e(t(g['link'],l))+'<span aria-hidden="true">+</span></summary><div><h3>'+e(t(g['name'],l))+'</h3>'+''.join('<p class="muted">'+e(t(x,l))+'</p>' for x in g['terms'])+'</div></details>'
 def channel(k,l,cls='btn secondary'):
  txt=L(k,l)
  if k=='email': return link(txt,'mailto:'+K['email'],cls)
@@ -90,7 +101,7 @@ def form(l):
  out+=f'<div class="honeypot" aria-hidden="true"><label for="company_url">Website</label><input id="company_url" name="company_url" tabindex="-1" autocomplete="off"></div><p class="privacy-note">{q("privacy")} <a href="{path("privacy",l)}">{L("privacy",l)}</a></p>'
  if not K['form_endpoint']: out+='<p class="form-unavailable">'+q('unconfigured')+'</p>'
  out+='<div id="turnstile" class="verification"></div>'
- out+=f'<button class="btn" type="submit">{q("submit")}<span class="arrow" aria-hidden="true">↗</span></button><p id="form-status" role="status" aria-live="polite" tabindex="-1"></p></form>'
+ out+=f'<button class="btn" type="submit">{q("submit")}<span class="arrow" aria-hidden="true">↗</span></button>'+guarantee(l)+'<p id="form-status" role="status" aria-live="polite" tabindex="-1"></p></form>'
  return out
 def marquee(l):
  # Trial strip behind content.json "marquee.enabled". Spiky thumbnails stay Arabic; Future Interiors follow the page language.
@@ -103,6 +114,7 @@ def render_section(s,l,i,page):
  out+=intro(s,l,i,kind=='hero')
  if kind=='hero':
   out+=actions(s.get('actions',[]),l)
+  if 'start' in s.get('actions',[]):out+=guarantee(l)
   if page=='home': out+='<div class="hero-foot"><span>'+t({'en':'Websites · Web applications','ar':'مواقع إلكترونية · تطبيقات ويب'},l)+'</span><span>'+t({'en':'Built with intention.','ar':'نبني بهدف واضح.'},l)+'</span></div>'
  elif kind=='projects': out+=projects(l,page=='home')
  elif kind=='reviews': out+=reviews(l)
@@ -112,10 +124,12 @@ def render_section(s,l,i,page):
   for j,a in enumerate(s['items']):
    out+=f'<article><span class="item-number">{j+1:02d}</span><h3>{e(t(a["title"],l))}</h3><div class="price"><p class="price-label muted">{e(t(s["startingFrom"],l))}</p><p class="price-value"><bdi dir="ltr">{a["price"]:,}</bdi> <span class="price-currency">{e(t(s["currency"],l))}</span></p></div></article>'
   out+='</div><p class="pricing-note muted">'+e(t(s['note'],l))+'</p>'+link(e(t(s['cta'],l)),path('contact',l),'text-link section-link')
+  out+=guarantee(l)
  elif kind=='faq':
-  out+='<div class="faq-list">'+''.join(f'<details><summary>{e(t(a["title"],l))}<span aria-hidden="true">+</span></summary><p>{e(t(a["body"],l))}</p></details>' for a in s['items'])+'</div>'
+  out+='<div class="faq-list">'+''.join(f'<details><summary>{e(t(a["title"],l))}<span aria-hidden="true">+</span></summary><p>{e(t(a["body"],l))}'+(' '+link(e(t(C['guarantee']['link'],l)),path('services',l)+'#delivery-guarantee','text-link') if a.get('termsLink') else '')+'</p></details>' for a in s['items'])+'</div>'
  elif kind=='detail':
   out+='<ul class="capabilities">'+''.join('<li>'+e(t(x,l))+'</li>' for x in s['items'])+'</ul>'+link(e(t(s['cta'],l)),path('contact',l),'text-link')
+  out+=guarantee(l)
   if s.get('examples'): out+='<div class="examples">'+''.join(link(p['name'],path(k,l),'text-link') for k,p in C['projects'].items())+'</div>'
  elif kind in ['cards','services','process','team','channels']:
   out+=f'<div class="grid {kind}-grid" style="--columns:{min(3,len(s["items"]))}">'
@@ -136,7 +150,8 @@ def render_section(s,l,i,page):
   out+='</div>'
   if kind=='services': out+=link(L('allServices',l),path('services',l),'text-link section-link')
   if 'cta' in s: out+=link(e(t(s['cta'],l)),path('contact',l),'text-link section-link')
- elif kind=='cta': out+=actions(['start','whatsapp'],l)
+  if s.get('guaranteeTerms'):out+=guarantee_terms(l)
+ elif kind=='cta': out+=actions(['start','whatsapp'],l)+guarantee(l)
  return out+'</div></section>'
 def figure(src,caption,l,cls=''):
  w,h=DIMENSIONS[src]
@@ -164,7 +179,7 @@ def case(k,l):
    content=s['html'][l]; content=re.sub(r'<h3>(.*?)</h3>',r'<h2>\1</h2>',content,count=1)
    out+='<div class="case-prose">'+content+'</div>'
   if i==6:
-   out+=actions(['start','whatsapp'],l); other='future-interiors' if k=='spiky' else 'spiky'
+   out+=actions(['start','whatsapp'],l)+guarantee(l); other='future-interiors' if k=='spiky' else 'spiky'
    thumb=C['projects'][other]['cover'][l].rsplit('.',1)[0]+'.webp'
    out+=link(L('related',l)+': '+C['projects'][other]['name'],path(other,l),'text-link section-link',attrs=f'data-thumb="/assets/thumbs/{thumb}"')
   out+='</div></section>'
@@ -204,7 +219,7 @@ def metadata(k,l,body):
  return tags+'<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False).replace('<','\\u003c')+'</script>'
 def build(k,l):
  body=''.join(render_section(s,l,i+1,k)+(marquee(l) if k=='home' and s['kind']=='hero' else '') for i,s in enumerate(C['pages'][k])) if k in C['pages'] else (case(k,l) if k in CASES else privacy(l))
- public={'formEndpoint':K['form_endpoint'],'turnstileSiteKey':K.get('turnstile_site_key',''),'policyVersion':'2026-10-19','formCopy':{key:t(v,l) for key,v in C['form'].items()},'close':L('close',l),'menu':L('menu',l)}
+ public={'conversionVersion':'trust-v1','formEndpoint':K['form_endpoint'],'turnstileSiteKey':K.get('turnstile_site_key',''),'policyVersion':'2026-10-19','formCopy':{key:t(v,l) for key,v in C['form'].items()},'close':L('close',l),'menu':L('menu',l)}
  out=f'<!doctype html><html lang="{l}" dir="{"rtl" if l=="ar" else "ltr"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0B0B0C">'+metadata(k,l,body)+'<link rel="preload" href="/assets/fonts/'+('ORVENArabic-Medium.woff2' if l=='ar' else 'SpaceGrotesk.woff2')+'" as="font" type="font/woff2" crossorigin><link rel="icon" href="/assets/orven-favicon-64.png" type="image/png"><link rel="preload" href="/assets/fonts/'+('ORVENArabic-Regular.woff2' if l=='ar' else 'Inter.woff2')+'" as="font" type="font/woff2" crossorigin><style>'+INLINE_CSS+'</style><script src="/site.js" defer></script></head><body data-page="'+k+'">'+header(k,l)+'<main id="main">'+body+'</main>'+footer(l)+f'<div class="toast" role="status" aria-live="polite" hidden></div><dialog class="lightbox" aria-label="{L("zoom",l)}"><button class="close" type="button" aria-label="{L("close",l)}">×</button><img alt=""><div class="lb-bar"><button class="lb-prev" type="button" aria-label="{L("previous",l)}"><span aria-hidden="true">←</span></button><p></p><span class="lb-count" aria-hidden="true"></span><button class="lb-next" type="button" aria-label="{L("next",l)}"><span aria-hidden="true">→</span></button></div></dialog><script type="application/json" id="site-settings">'+json.dumps(public,ensure_ascii=False).replace('<','\\u003c')+'</script></body></html>'
  folder=D/path(k,l).lstrip('/');folder.mkdir(parents=True,exist_ok=True);(folder/'index.html').write_text(out,encoding='utf-8')
 for l in ['en','ar']:

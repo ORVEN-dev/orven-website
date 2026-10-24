@@ -332,12 +332,12 @@
       {
         "kind": "hero",
         "title": {
-          "en": "Digital experiences.\nBuilt around your business.",
-          "ar": "تجارب رقمية.\nمصمّمة حول احتياجات أعمالك."
+          "en": "Make your business clear.\nGive customers confidence.",
+          "ar": "عرّف بنشاطك بوضوح.\nوامنح عميلك الثقة."
         },
         "body": {
-          "en": "We design and develop websites and web applications that make sense for your business, your customers, and the way you work.",
-          "ar": "نصمّم ونطوّر مواقع وتطبيقات ويب تناسب طبيعة نشاطك وعملاءك وطريقة عملك."
+          "en": "When customers can't see what you offer or how to reach you, trust is harder to build. We create websites and web apps that explain your value and make the next step clear, with delivery protected by agreed terms.",
+          "ar": "عندما لا يجد العميل شرحًا واضحًا لخدماتك أو طريقة سهلة للتواصل، يصعب بناء ثقته. نصمّم ونطوّر مواقع وتطبيقات ويب توضّح قيمة نشاطك وتسهّل الخطوة التالية، مع ضمان تسليم بشروط متفق عليها."
         },
         "label": {
           "en": "WEB DESIGN & DEVELOPMENT",
@@ -355,8 +355,8 @@
           "ar": "الحل المناسب يبدأ بفهم المشكلة."
         },
         "body": {
-          "en": "Before we design or develop anything, we take the time to understand your business, the challenges you're facing, and what you actually need. That way, every decision has a reason behind it.",
-          "ar": "قبل أن نصمّم أو نطوّر أي شيء، نأخذ الوقت لفهم نشاطك والتحديات التي تواجهها وما تحتاجه فعلًا. ليكون لكل قرار في المشروع سبب واضح."
+          "en": "We start by understanding what your customers need to know and what slows your team down. Then we agree on what to build, how it will be delivered, and the next steps, so you can make an informed decision before work starts.",
+          "ar": "نبدأ بفهم ما يحتاج عميلك إلى معرفته وما يعطّل عمل فريقك. ثم نتفق على ما سنبنيه وطريقة تسليمه والخطوات التالية، لتتخذ قرارك على أساس واضح قبل بدء التنفيذ."
         },
         "label": {
           "en": "OUR APPROACH",
@@ -435,15 +435,24 @@
         },
         "items": [
           {
-            "title": {"en": "Landing Page", "ar": "صفحة هبوط"},
+            "title": {
+              "en": "Landing Page",
+              "ar": "صفحة هبوط"
+            },
             "price": 8000
           },
           {
-            "title": {"en": "Multi-Page Website", "ar": "موقع متعدد الصفحات"},
+            "title": {
+              "en": "Multi-Page Website",
+              "ar": "موقع متعدد الصفحات"
+            },
             "price": 16000
           },
           {
-            "title": {"en": "Custom Web App", "ar": "تطبيق ويب مخصّص"},
+            "title": {
+              "en": "Custom Web App",
+              "ar": "تطبيق ويب مخصّص"
+            },
             "price": 35000
           }
         ],
@@ -489,32 +498,32 @@
         "items": [
           {
             "title": {
-              "en": "We look at the bigger picture.",
-              "ar": "ننظر إلى الصورة الكاملة."
+              "en": "A scope you can rely on.",
+              "ar": "نطاق عمل واضح من البداية."
             },
             "body": {
-              "en": "We take time to understand your business and what the solution needs to achieve.",
-              "ar": "نأخذ الوقت لفهم نشاطك والأهداف التي ينبغي أن يحقّقها الحل."
+              "en": "Know what is included, what it costs, and when it is due. We document the scope, delivery deadline and review stages before development begins.",
+              "ar": "اعرف ما يشمله المشروع وتكلفته وموعد تسليمه. نوثّق نطاق العمل والموعد ومراحل المراجعة قبل بدء التطوير."
             }
           },
           {
             "title": {
-              "en": "Design with a reason.",
-              "ar": "تصميم له هدف."
+              "en": "Help customers take the next step.",
+              "ar": "سهّل الخطوة التالية لعميلك."
             },
             "body": {
-              "en": "Clear layouts and thoughtful experiences, shaped around the people who will use them.",
-              "ar": "واجهات واضحة وتجارب مدروسة، مصمّمة حول احتياجات من يستخدمونها."
+              "en": "Clear services, useful information and accessible contact options help visitors understand your business and decide whether to get in touch.",
+              "ar": "خدمات واضحة ومعلومات مفيدة ووسائل تواصل سهلة تساعد الزائر على فهم نشاطك واتخاذ قرار التواصل."
             }
           },
           {
             "title": {
-              "en": "Built to work, not just look good.",
-              "ar": "جودة تظهر في الاستخدام."
+              "en": "Less friction in everyday work.",
+              "ar": "عمل يومي أكثر سهولة."
             },
             "body": {
-              "en": "We pay attention to functionality, performance, and the details that matter in everyday use.",
-              "ar": "نهتم بالوظائف والأداء والتفاصيل التي تصنع فرقًا في الاستخدام اليومي."
+              "en": "Bring the tools your team and customers need into a practical web app, with the agreed functions tested across screen sizes before delivery.",
+              "ar": "اجمع الأدوات التي يحتاجها فريقك وعملاؤك في تطبيق عملي، مع اختبار الوظائف المتفق عليها على أحجام الشاشات المختلفة قبل التسليم."
             }
           },
           {
@@ -523,8 +532,8 @@
               "ar": "نواصل معك بعد الإطلاق."
             },
             "body": {
-              "en": "Clear communication throughout the project, with support and maintenance options after delivery.",
-              "ar": "تواصل واضح طوال المشروع، وخيارات للدعم والصيانة بعد التسليم وفق الاتفاق."
+              "en": "Covered implementation defects are corrected free of charge for 30 days after delivery. Ongoing maintenance and changes outside the agreed scope are quoted separately.",
+              "ar": "نصحّح عيوب التنفيذ المشمولة مجانًا لمدة 30 يومًا بعد التسليم. وتُسعّر الصيانة المستمرة والتغييرات خارج نطاق العمل المتفق عليه بصورة منفصلة."
             }
           }
         ]
@@ -560,8 +569,8 @@
               "ar": "نخطط"
             },
             "body": {
-              "en": "We define the scope, priorities, and a clear direction for the project.",
-              "ar": "نحدّد نطاق العمل والأولويات ومسارًا واضحًا للمشروع."
+              "en": "After discovery and internal scope review, we send a detailed final quote. We agree the scope, contractual deadline, review stages and cure period before work begins.",
+              "ar": "بعد اجتماع فهم الاحتياجات والمراجعة الداخلية، نرسل عرض سعر نهائيًا مفصّلًا. ونتفق على النطاق والموعد التعاقدي ومراحل المراجعة ومهلة الإصلاح قبل بدء العمل."
             }
           },
           {
@@ -590,8 +599,8 @@
               "ar": "نطلق وندعم"
             },
             "body": {
-              "en": "We launch your project and provide support based on our agreement.",
-              "ar": "نطلق مشروعك ونقدّم الدعم وفق الاتفاق."
+              "en": "Covered implementation defects are corrected free of charge for 30 days after delivery. Ongoing maintenance and changes outside the agreed scope are quoted separately.",
+              "ar": "نصحّح عيوب التنفيذ المشمولة مجانًا لمدة 30 يومًا بعد التسليم. وتُسعّر الصيانة المستمرة والتغييرات خارج نطاق العمل المتفق عليه بصورة منفصلة."
             }
           }
         ]
@@ -634,8 +643,8 @@
               "ar": "كيف تُحدَّد تكلفة المشروع؟"
             },
             "body": {
-              "en": "Every project is different. Once we understand what you need, we'll provide a quote based on the scope and requirements.",
-              "ar": "لكل مشروع متطلباته. بعد فهم احتياجاتك، نقدّم عرض سعر بناءً على نطاق العمل والتفاصيل المطلوبة."
+              "en": "Landing pages start at EGP 8,000, multi-page websites at EGP 16,000, and custom web apps at EGP 35,000. After a discovery meeting and internal review, we send a detailed final quote; it is not an instant price during the meeting. Requested hosting is included in that quote based on project needs. If you do not request hosting, no hosting fee is charged.",
+              "ar": "تبدأ صفحات الهبوط من 8,000 جنيه، والمواقع متعددة الصفحات من 16,000 جنيه، وتطبيقات الويب المخصّصة من 35,000 جنيه. نرسل عرض السعر النهائي المفصّل بعد اجتماع فهم الاحتياجات والمراجعة الداخلية، وليس سعرًا فوريًا أثناء الاجتماع. تُضاف الاستضافة إلى العرض حسب احتياجات المشروع إذا طلبتها؛ وإن لم تطلبها، لا تُحتسب رسومها."
             }
           },
           {
@@ -654,8 +663,8 @@
               "ar": "هل يمكنني طلب تعديلات أثناء التنفيذ؟"
             },
             "body": {
-              "en": "Yes. We'll agree on the scope and review stages from the start, so feedback and revisions are handled clearly. Any additional work outside the agreed scope will be discussed first.",
-              "ar": "نعم. نتفق منذ البداية على نطاق العمل ومراحل المراجعة، لتكون الملاحظات والتعديلات واضحة. ونناقش أي عمل إضافي خارج النطاق المتفق عليه قبل تنفيذه."
+              "en": "Yes. We agree on the scope and review stages before work begins. Changes outside that scope have separate fees and any impact on the deadline is agreed in writing before proceeding.",
+              "ar": "نعم. نتفق على نطاق العمل ومراحل المراجعة قبل البدء. التغييرات خارج النطاق لها رسوم منفصلة، ويُتفق كتابيًا على أي أثر لها على موعد التسليم قبل تنفيذها."
             }
           },
           {
@@ -664,9 +673,20 @@
               "ar": "ماذا يحدث بعد الإطلاق؟"
             },
             "body": {
-              "en": "We provide an agreed period of maintenance and support after delivery. Ongoing maintenance and additional changes can be arranged separately.",
-              "ar": "نقدّم فترة متفقًا عليها للصيانة والدعم بعد التسليم. ويمكن الاتفاق بصورة منفصلة على الصيانة المستمرة والتعديلات الإضافية."
+              "en": "Covered implementation defects are corrected free of charge for 30 days after delivery. Ongoing maintenance and changes outside the agreed scope are quoted separately.",
+              "ar": "نصحّح عيوب التنفيذ المشمولة مجانًا لمدة 30 يومًا بعد التسليم. وتُسعّر الصيانة المستمرة والتغييرات خارج نطاق العمل المتفق عليه بصورة منفصلة."
             }
+          },
+          {
+            "title": {
+              "en": "What does the delivery guarantee cover?",
+              "ar": "ماذا يشمل ضمان التسليم؟"
+            },
+            "body": {
+              "en": "If ORVEN, for reasons attributable to it, fails to deliver the agreed specifications or meet the contractual deadline, and does not remedy that breach within the contractual cure period, we refund 100% of the development fees paid. External expenses are excluded. This is a delivery guarantee, not a promise of revenue or leads. Read the full terms before agreeing your project.",
+              "ar": "إذا أخفقت ORVEN لأسباب راجعة إليها في التسليم وفق المواصفات المتفق عليها أو الموعد التعاقدي، ولم تعالج الإخلال خلال مهلة الإصلاح المحدّدة بالعقد، نردّ 100% من رسوم التطوير المدفوعة. لا يشمل الرد المصروفات الخارجية. هذا ضمان للتسليم، ولا يَعِد بعائدات أو عملاء محتملين مضمونين. اطّلع على الشروط الكاملة قبل الاتفاق على مشروعك."
+            },
+            "termsLink": true
           }
         ]
       },
@@ -690,12 +710,12 @@
       {
         "kind": "hero",
         "title": {
-          "en": "Different businesses.\nDifferent needs.",
-          "ar": "لكل نشاط طبيعته.\nولكل مشروع احتياجاته."
+          "en": "Clear to your customers.\nUseful to your team.",
+          "ar": "واضح لعملائك.\nعملي لفريقك."
         },
         "body": {
-          "en": "Whether you need a new website, a better version of your current one, or a custom web application, we help you find and build the solution that fits your business.",
-          "ar": "سواء كنت تحتاج إلى موقع جديد، أو تطوير موقعك الحالي، أو تطبيق ويب مخصّص، نساعدك على اختيار الحل المناسب لنشاطك وتنفيذه."
+          "en": "Help customers understand your services, or replace disconnected tools with a system that fits your work. We build websites and web apps around those needs, with a written scope, contractual deadline and conditional delivery guarantee.",
+          "ar": "ساعد عملاءك على فهم خدماتك، أو اجمع الأدوات المتفرّقة في نظام يناسب عملك. نبني مواقع وتطبيقات ويب لهذه الاحتياجات، بنطاق مكتوب وموعد تعاقدي وضمان تسليم مشروط."
         },
         "label": {
           "en": "OUR SERVICES",
@@ -814,8 +834,8 @@
               "ar": "الصيانة"
             },
             "body": {
-              "en": "An agreed period of maintenance is included after delivery. Further maintenance or changes can be arranged separately.",
-              "ar": "تشمل الخدمة فترة صيانة متفقًا عليها بعد التسليم. ويمكن الاتفاق بصورة منفصلة على الصيانة الإضافية أو التعديلات الجديدة."
+              "en": "Covered implementation defects are corrected free of charge for 30 days after delivery. Ongoing maintenance and changes outside the agreed scope are quoted separately.",
+              "ar": "نصحّح عيوب التنفيذ المشمولة مجانًا لمدة 30 يومًا بعد التسليم. وتُسعّر الصيانة المستمرة والتغييرات خارج نطاق العمل المتفق عليه بصورة منفصلة."
             }
           },
           {
@@ -832,7 +852,8 @@
         "cta": {
           "en": "Ask About Support",
           "ar": "استفسر عن الدعم الفني"
-        }
+        },
+        "guaranteeTerms": true
       },
       {
         "kind": "process",
@@ -865,8 +886,8 @@
               "ar": "نخطط"
             },
             "body": {
-              "en": "We define the project's requirements, scope, priorities, and expected timeline so everyone knows what's included.",
-              "ar": "نحدّد متطلبات المشروع ونطاقه وأولوياته والجدول الزمني المتوقع، لتكون تفاصيل العمل واضحة للجميع."
+              "en": "After discovery and internal scope review, we send a detailed final quote. We agree the scope, contractual deadline, review stages and cure period before work begins.",
+              "ar": "بعد اجتماع فهم الاحتياجات والمراجعة الداخلية، نرسل عرض سعر نهائيًا مفصّلًا. ونتفق على النطاق والموعد التعاقدي ومراحل المراجعة ومهلة الإصلاح قبل بدء العمل."
             }
           },
           {
@@ -895,8 +916,8 @@
               "ar": "نطلق وندعم"
             },
             "body": {
-              "en": "We prepare and launch your project, then provide the maintenance and support agreed upon before delivery.",
-              "ar": "نجهّز مشروعك ونطلقه، ثم نقدّم الصيانة والدعم وفق ما اتُّفق عليه قبل التسليم."
+              "en": "Covered implementation defects are corrected free of charge for 30 days after delivery. Ongoing maintenance and changes outside the agreed scope are quoted separately.",
+              "ar": "نصحّح عيوب التنفيذ المشمولة مجانًا لمدة 30 يومًا بعد التسليم. وتُسعّر الصيانة المستمرة والتغييرات خارج نطاق العمل المتفق عليه بصورة منفصلة."
             }
           }
         ]
@@ -1112,8 +1133,8 @@
           "ar": "لنبدأ بمحادثة."
         },
         "body": {
-          "en": "Have a project in mind, a problem you're trying to solve, or just a question? Tell us a little about it. We'll help you figure out the next step.",
-          "ar": "هل لديك فكرة مشروع، أو مشكلة تحاول حلّها، أو سؤال؟ حدّثنا عنها، وسنساعدك على تحديد الخطوة التالية."
+          "en": "Tell us what your business needs. We discuss the requirements, review the scope internally, then send a detailed final quote before you decide to proceed.",
+          "ar": "حدّثنا عمّا يحتاجه نشاطك. نناقش المتطلبات ونراجع نطاق العمل داخليًا، ثم نرسل عرض سعر نهائيًا مفصّلًا قبل أن تقرّر البدء."
         },
         "label": {
           "en": "GET IN TOUCH",
@@ -1189,12 +1210,12 @@
       {
         "kind": "closing",
         "title": {
-          "en": "Start small. We'll take it from there.",
-          "ar": "ابدأ بمحادثة بسيطة، ولنحدّد الخطوة التالية معًا."
+          "en": "Know the scope. Then decide.",
+          "ar": "اعرف التفاصيل، ثم قرّر."
         },
         "body": {
-          "en": "You just need somewhere to start. Tell us what you have in mind, even if it's still an early idea. We'll figure out the next step together.",
-          "ar": "كل ما تحتاج إليه هو نقطة بداية. شاركنا ما تفكّر فيه، حتى لو كانت الفكرة في بدايتها، ولنحدّد الخطوة التالية معًا."
+          "en": "After the discovery meeting, we review the requirements and send your detailed final quote. The meeting does not commit you to a project, and the final price is not given instantly during the call.",
+          "ar": "بعد اجتماع فهم الاحتياجات، نراجع المتطلبات ونرسل عرض السعر النهائي المفصّل. الاجتماع لا يُلزمك ببدء مشروع، والسعر النهائي لا يُحدَّد فوريًا أثناء المكالمة."
         },
         "label": {
           "en": "ONE LAST THING",
@@ -1262,6 +1283,42 @@
       {
         "project": "future-interiors",
         "thumb": "future-public-{lang}-04.webp"
+      }
+    ]
+  },
+  "guarantee": {
+    "name": {
+      "en": "ORVEN 100% Delivery Guarantee",
+      "ar": "ضمان ORVEN للتسليم بنسبة 100%"
+    },
+    "summary": {
+      "en": "If an ORVEN-caused failure to meet agreed specifications or the contractual deadline remains unresolved after the contractual cure period, we refund 100% of development fees paid. Terms apply.",
+      "ar": "إذا أخفقت ORVEN لأسباب راجعة إليها في الالتزام بالمواصفات المتفق عليها أو الموعد التعاقدي، ولم تعالج الإخلال خلال مهلة الإصلاح التعاقدية، نردّ 100% من رسوم التطوير المدفوعة. تُطبّق الشروط."
+    },
+    "link": {
+      "en": "Delivery guarantee terms",
+      "ar": "شروط ضمان التسليم"
+    },
+    "terms": [
+      {
+        "en": "If ORVEN, for reasons attributable to it, fails to deliver your website or web app according to the agreed specifications or the contractual deadline, and does not remedy the breach within the cure period specified in the contract, ORVEN refunds 100% of the development fees you have paid.",
+        "ar": "إذا أخفقت ORVEN لأسباب راجعة إليها في تسليم موقعك أو تطبيق الويب وفق المواصفات المتفق عليها أو الموعد التعاقدي، ولم تعالج الإخلال خلال مهلة الإصلاح المحدّدة بالعقد، تردّ ORVEN نسبة 100% من رسوم التطوير التي دفعتها."
+      },
+      {
+        "en": "The refund covers development fees only. External expenses, such as hosting, domain registration, paid licences and third-party services, are separate from development fees and are not covered by this refund. The detailed quote identifies these costs. Hosting is charged only if requested, based on the project’s needs, and included in the final quote.",
+        "ar": "يشمل الرد رسوم التطوير فقط. المصروفات الخارجية، مثل الاستضافة وحجز النطاق والتراخيص المدفوعة وخدمات الأطراف الأخرى، منفصلة عن رسوم التطوير ولا يشملها هذا الرد. يوضّح عرض السعر المفصّل هذه التكاليف. تُحتسب الاستضافة حسب احتياجات المشروع فقط إذا طلبتها، وتُدرج في عرض السعر النهائي."
+      },
+      {
+        "en": "Before work begins, the contract records the specifications, scope, delivery deadline, client dependencies, cure period and process for notifying a breach and requesting a refund. Changes to scope or dates require written agreement. The guarantee applies to failures attributable to ORVEN; it does not promise revenue, sales or leads.",
+        "ar": "يوثّق العقد قبل بدء العمل المواصفات ونطاق المشروع وموعد التسليم وما يلزم توفيره من العميل ومهلة الإصلاح وآلية الإخطار بالإخلال وطلب رد الرسوم. تتطلّب تغييرات النطاق أو المواعيد اتفاقًا مكتوبًا. ينطبق الضمان على الإخفاقات الراجعة إلى ORVEN، ولا يَعِد بعائدات أو مبيعات أو عملاء محتملين مضمونين."
+      },
+      {
+        "en": "Covered implementation defects are corrected free of charge for 30 days after delivery. Ongoing maintenance and changes outside the agreed scope are quoted separately.",
+        "ar": "نصحّح عيوب التنفيذ المشمولة مجانًا لمدة 30 يومًا بعد التسليم. وتُسعّر الصيانة المستمرة والتغييرات خارج نطاق العمل المتفق عليه بصورة منفصلة."
+      },
+      {
+        "en": "These terms are to be read with your project contract and do not limit any rights that cannot lawfully be excluded.",
+        "ar": "تُقرأ هذه الشروط مع عقد مشروعك، ولا تحدّ من أي حقوق لا يجوز استبعادها قانونًا."
       }
     ]
   }

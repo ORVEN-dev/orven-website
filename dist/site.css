@@ -265,3 +265,18 @@ html[dir=rtl] .member h3::after{background:linear-gradient(270deg,#715842,#C9B29
  .member:hover h3::after{width:140px}
 }
 @media(prefers-reduced-motion:reduce){.member::before{display:none}}
+/* Delivery assurance uses the existing type, colors and section layout. */
+.delivery-note{max-width:680px;margin-top:24px;padding-inline-start:18px;border-inline-start:1px solid var(--bronze)}
+.delivery-note .delivery-name{font-size:14px;color:var(--bronze);margin:0 0 8px;font-weight:500}
+.delivery-note p.muted{font-size:13px;line-height:1.75;margin:0;max-width:none}
+.delivery-note .text-link{font-size:13px;margin-top:8px;min-height:44px;display:inline-flex;align-items:center}
+.light .delivery-note .delivery-name{color:#715842}
+.delivery-terms{margin-top:40px;border-block:1px solid var(--line-dark);scroll-margin-top:125px}
+.delivery-terms summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px;align-items:center;min-height:72px;font-size:18px}
+.delivery-terms summary::-webkit-details-marker{display:none}
+.delivery-terms summary span{font-size:24px}
+.delivery-terms[open] summary span{transform:rotate(45deg)}
+.delivery-terms>div{max-width:850px;padding-bottom:24px}
+.delivery-terms h3{font-size:23px;margin:16px 0}
+.delivery-terms p+p{margin-top:16px}
+@media(max-width:760px){.delivery-note{padding-inline-start:14px}.delivery-terms{scroll-margin-top:100px}.delivery-terms summary{font-size:17px}.delivery-terms h3{font-size:21px}}
