@@ -60,4 +60,6 @@ Do not run `liveSelfTest` casually: it creates and permanently deletes a synthet
 
 ## Deployment record
 
+25 October 2026: source `5db503a179045bcc317aaf5bd0a1c53384d7c30e` published directly to Worker `orven`, version `2164c6ff-5bc3-4438-81f1-7353a87ae327`. All 16 live localized pages and CSS/JS matched the published source; 32 live responsive browser views passed. See `SALES-FUNNEL-HANDOFF.md`. PR #1 remains separate from this direct deployment.
+
 Worker `orven`, version `287cd801-20d4-414b-be9f-a2120b0fff52`, deployed 19 October 2026. Google web app version 1, description “ORVEN launch — verified save and 30-day retention.” Administrative deployment identifiers are in the private handoff report. No paid subscription was activated.

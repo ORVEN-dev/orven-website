@@ -2,6 +2,14 @@
 
 Implemented 24 October 2026 against main `470a806eac4e386df5402857d0f57c589925d23a`.
 
+## Production deployment — 25 October 2026
+
+The owner explicitly requested Cloudflare publication after approving the restored headlines. Published source commit `5db503a179045bcc317aaf5bd0a1c53384d7c30e` directly using the existing Wrangler configuration and account. Cloudflare reports Worker `orven` version `2164c6ff-5bc3-4438-81f1-7353a87ae327` deployed to `https://orven.orven-agency01.workers.dev`. The preceding production version is `8ad0158a-ae29-435d-9e5a-cba189c63147`.
+
+Before deployment, the production build, 864 static checks, asset budgets and all 43 Worker/retention tests passed. After deployment, direct live GETs of all 16 localized pages plus `site.js` and `site.css` matched the local published files byte-for-byte. Live browser verification passed 32 page views across both languages at 390 and 1440 pixels, checking HTTP 200, headings, direction, overflow, exact English offer/name, localized guarantee links and terms opening. Screenshots were inspected. No inquiry or other production POST was sent.
+
+Deployment used the existing Worker, asset and rate-limit bindings. No authentication, secrets, Google integration or retention settings were edited. This deployment does not merge PR #1 into main. Earlier statements below that the work was not deployed describe the previous review stages and are superseded by this verified production record. Legal review remains a recommendation; no legal certification is claimed.
+
 ## Current copy revision — 25 October 2026
 
 At the owner's request, the existing English and Arabic headlines and subheadlines have been restored verbatim from `470a806`. This includes the original Home and Services hero titles/intros, Home approach intro and benefit-card headings, and Contact intro/closing headline and subheadline. Home again reads `Digital experiences. Built around your business.` and Services reads `Different businesses. Different needs.` with their original authored line breaks. Only eleven bilingual heading/intro fields changed from the approved-offer revision.
