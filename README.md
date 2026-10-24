@@ -4,6 +4,8 @@ Live: https://orven.orven-agency01.workers.dev/ar/ · https://orven.orven-agency
 
 Read `DELIVERY-REPORT-AR.md` for verified results, limitations, ownership, and remaining decisions. This package contains editable source and deployment configuration, not Cloudflare or Google credentials.
 
+For the 24 October delivery-guarantee and trust-funnel update, read `SALES-FUNNEL-HANDOFF.md` for the approved terms, campaign links, local conversion hooks, current verification and release status. New funnel regression: run `node tests/funnel-browser.cjs` with Playwright and a local preview on port 8774 (or set `TEST_ORIGIN`).
+
 ## Edit and preview
 
 Performance maintenance: `tools/responsive_images.py` (Pillow) regenerates uncropped WebP display variants after screenshot changes; the original files remain the lightbox sources. `tools/subset_arabic_fonts.py` (fonttools + brotli) regenerates Arabic webfonts from the retained TTF originals, preserving Arabic shaping, the basic Arabic block, and authored characters. Commit generated assets and their manifest. The standard-library build embeds the authored CSS into each page to avoid blocking CSS requests, and preloads both page-language fonts. Keep editing the original CSS files, not the generated inline styles.
@@ -57,5 +59,7 @@ Use `RETENTION-RUNBOOK-AR.md`. The Form is the inquiry store; there is no separa
 Do not run `liveSelfTest` casually: it creates and permanently deletes a synthetic inquiry and its notification. The owner explicitly approved and witnessed a successful launch test. `previewRetention` is the non-destructive operational review.
 
 ## Deployment record
+
+25 October 2026: source `5db503a179045bcc317aaf5bd0a1c53384d7c30e` published directly to Worker `orven`, version `2164c6ff-5bc3-4438-81f1-7353a87ae327`. All 16 live localized pages and CSS/JS matched the published source; 32 live responsive browser views passed. See `SALES-FUNNEL-HANDOFF.md`. PR #1 remains separate from this direct deployment.
 
 Worker `orven`, version `287cd801-20d4-414b-be9f-a2120b0fff52`, deployed 19 October 2026. Google web app version 1, description “ORVEN launch — verified save and 30-day retention.” Administrative deployment identifiers are in the private handoff report. No paid subscription was activated.

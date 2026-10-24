@@ -1,0 +1,812 @@
+{
+  "results": [
+    {
+      "lang": "en",
+      "route": "",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "services/",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "contact/",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "services/",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        },
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "contact/",
+      "width": 320,
+      "scrollWidth": 320,
+      "notes": [
+        {
+          "width": 279,
+          "scrollWidth": 279,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "",
+      "width": 390,
+      "scrollWidth": 390,
+      "notes": [
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "services/",
+      "width": 390,
+      "scrollWidth": 390,
+      "notes": [
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "contact/",
+      "width": 390,
+      "scrollWidth": 390,
+      "notes": [
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "",
+      "width": 390,
+      "scrollWidth": 390,
+      "notes": [
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "services/",
+      "width": 390,
+      "scrollWidth": 390,
+      "notes": [
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        },
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "contact/",
+      "width": 390,
+      "scrollWidth": 390,
+      "notes": [
+        {
+          "width": 349,
+          "scrollWidth": 349,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "",
+      "width": 768,
+      "scrollWidth": 768,
+      "notes": [
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "services/",
+      "width": 768,
+      "scrollWidth": 768,
+      "notes": [
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "contact/",
+      "width": 768,
+      "scrollWidth": 768,
+      "notes": [
+        {
+          "width": 321,
+          "scrollWidth": 321,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "",
+      "width": 768,
+      "scrollWidth": 768,
+      "notes": [
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "services/",
+      "width": 768,
+      "scrollWidth": 768,
+      "notes": [
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        },
+        {
+          "width": 639,
+          "scrollWidth": 639,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "contact/",
+      "width": 768,
+      "scrollWidth": 768,
+      "notes": [
+        {
+          "width": 321,
+          "scrollWidth": 321,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "",
+      "width": 908,
+      "scrollWidth": 908,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "services/",
+      "width": 908,
+      "scrollWidth": 908,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "contact/",
+      "width": 908,
+      "scrollWidth": 908,
+      "notes": [
+        {
+          "width": 397,
+          "scrollWidth": 397,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "",
+      "width": 908,
+      "scrollWidth": 908,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "services/",
+      "width": 908,
+      "scrollWidth": 908,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "contact/",
+      "width": 908,
+      "scrollWidth": 908,
+      "notes": [
+        {
+          "width": 397,
+          "scrollWidth": 397,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "services/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "contact/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "notes": [
+        {
+          "width": 460,
+          "scrollWidth": 460,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "services/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "contact/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "notes": [
+        {
+          "width": 460,
+          "scrollWidth": 460,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "services/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "en",
+      "route": "contact/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "notes": [
+        {
+          "width": 604,
+          "scrollWidth": 604,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "services/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "notes": [
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        },
+        {
+          "width": 679,
+          "scrollWidth": 679,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    },
+    {
+      "lang": "ar",
+      "route": "contact/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "notes": [
+        {
+          "width": 604,
+          "scrollWidth": 604,
+          "actionBefore": true
+        }
+      ],
+      "clipped": 0
+    }
+  ],
+  "errors": [],
+  "mockedInquiryResponses": 3,
+  "interactions": "Localized terms links, same-fragment reopening, keyboard disclosure, no-JS terms, localized project CTA, conversion payload privacy and success-only confirmation passed",
+  "scope": "Local browser; no production inquiry or third-party analytics"
+}
